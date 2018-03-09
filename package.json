@@ -1,0 +1,19 @@
+{
+  "name": "react-shop-backend",
+  "version": "1.0.0",
+  "description": "react  build shop backend system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labike/react-shop-backend.git"
+  },
+  "author": "labike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/labike/react-shop-backend/issues"
+  },
+  "homepage": "https://github.com/labike/react-shop-backend#readme"
+}
