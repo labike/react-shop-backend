@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2018-03-09 14:07:52 
  * @Last Modified by: labike
- * @Last Modified time: 2018-03-13 20:25:28
+ * @Last Modified time: 2018-03-14 20:46:31
  */
 
 const path = require('path');
@@ -20,7 +20,9 @@ module.exports = {
     resolve: {
         alias: {
             page: path.resolve(__dirname, 'src/page'),
-            component: path.resolve(__dirname, 'src/component')
+            component: path.resolve(__dirname, 'src/component'),
+            utils: path.resolve(__dirname, 'src/utils'),
+            service: path.resolve(__dirname, 'src/service')
         }
     },
     module: {
@@ -90,6 +92,16 @@ module.exports = {
         port: 8088,
         historyApiFallback: {
             index: '/dist/index.html'
+        },
+        proxy: {
+            '/manage': {
+                target: 'http://admintest.happymmall.com',
+                changeOrigin: true
+            },
+            '/user/logout.do': {
+                target: 'http://admintest.happymmall.com',
+                changeOrigin: true
+            }
         }
-    },
+    }
 };

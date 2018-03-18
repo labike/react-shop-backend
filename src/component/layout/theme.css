@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2018-03-12 22:06:04 
  * @Last Modified by: labike
- * @Last Modified time: 2018-03-12 23:42:43
+ * @Last Modified time: 2018-03-14 21:25:43
  */
 
  body {
@@ -46,7 +46,6 @@ h4 {
 p {
 	font-size: 16px;
 	line-height: 25px;
-	padding-top: 20px;
 }
 
 .panel {
