@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2018-03-09 14:12:55 
  * @Last Modified by: labike
- * @Last Modified time: 2018-03-15 21:36:46
+ * @Last Modified time: 2018-03-18 23:23:57
  */
 
 import React, { Component } from 'react';
@@ -24,7 +24,7 @@ class App extends Component{
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/product' component={ProductRouter} />
-                    <Route path='/product-catrgory' component={Home} />
+                    <Route path='/product-catrgory' component={ProductRouter} />
                     <Route path='/user/index' component={UserList} />
                     <Redirect exact from='/user' to="/user/index" />
                     <Route component={ErrorPage} />

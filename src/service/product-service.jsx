@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2018-03-13 22:09:01 
  * @Last Modified by: labike
- * @Last Modified time: 2018-03-18 11:38:31
+ * @Last Modified time: 2018-03-19 20:31:33
  */
 
 import ShopUtil from 'utils/shop.jsx';
@@ -97,6 +97,21 @@ class Product{
             data: {
                 productId: productId || 0
             }
+        });
+    }
+    //修改品类名称
+    saveCategory(category){
+        return _shopUtil.request({
+            type: 'post',
+            url: '/manage/category/add_category.do',
+            data: category
+        });
+    }
+    updateCategoryName(category){
+        return _shopUtil.request({
+            type: 'post',
+            url: '/manage/category/set_category_name.do',
+            data: category
         });
     }
 }
